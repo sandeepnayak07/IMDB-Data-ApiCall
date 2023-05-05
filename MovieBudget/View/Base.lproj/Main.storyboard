@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MovieBudget" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UfC-Gb-nlI">
+                                <rect key="frame" x="0.0" y="602" width="393" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="tah-Zm-hCZ"/>
+                                </constraints>
+                            </pickerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5uk-nS-ahe">
+                                <rect key="frame" x="0.0" y="89" width="393" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MovieData" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcA-OH-yCb">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8CX-Xt-tg7"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="KYz-yp-Fxc">
+                                <rect key="frame" x="20" y="164" width="363" height="70"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popcorn.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Axn-1d-OQh">
+                                        <rect key="frame" x="0.0" y="-1" width="24.666666666666668" height="72.666666666666671"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MovieName" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p59-Nw-FTP">
+                                        <rect key="frame" x="63.666666666666671" y="0.0" width="152.33333333333331" height="70"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Director" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcq-Rg-cM0">
+                                        <rect key="frame" x="255" y="0.0" width="108" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="rgQ-hs-r74"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="2s3-zf-CGQ"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actors" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODh-jI-SGc">
+                                <rect key="frame" x="20" y="304" width="353" height="20"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PdL-Ep-Uff">
+                                <rect key="frame" x="10" y="344" width="373" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Year " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdd-hH-SbF">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="lZr-p0-xGr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rw-ni-CWF">
+                                        <rect key="frame" x="100" y="0.0" width="273" height="50"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6Sy-fZ-eqd"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1X6-7C-a34">
+                                <rect key="frame" x="15" y="414" width="363" height="20"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="tintColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UfC-Gb-nlI" secondAttribute="bottom" id="0Z4-LE-guR"/>
+                            <constraint firstItem="PdL-Ep-Uff" firstAttribute="top" secondItem="ODh-jI-SGc" secondAttribute="bottom" constant="20" id="0d3-0e-uOA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UfC-Gb-nlI" secondAttribute="trailing" id="2qn-dD-kLN"/>
+                            <constraint firstItem="KYz-yp-Fxc" firstAttribute="top" secondItem="5uk-nS-ahe" secondAttribute="bottom" constant="25" id="47d-ti-XXy"/>
+                            <constraint firstItem="1X6-7C-a34" firstAttribute="top" secondItem="PdL-Ep-Uff" secondAttribute="bottom" constant="20" id="6Q0-yp-qxM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PdL-Ep-Uff" secondAttribute="trailing" constant="10" id="6sg-aO-A5R"/>
+                            <constraint firstItem="5uk-nS-ahe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="9q8-hM-gVM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KYz-yp-Fxc" secondAttribute="trailing" constant="10" id="CT5-FA-muo"/>
+                            <constraint firstItem="KYz-yp-Fxc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GX7-se-uHf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5uk-nS-ahe" secondAttribute="trailing" id="JDV-7f-Xzf"/>
+                            <constraint firstItem="5uk-nS-ahe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QG4-aY-5dx"/>
+                            <constraint firstItem="1X6-7C-a34" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="RYA-mm-pRD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ODh-jI-SGc" secondAttribute="trailing" constant="20" id="Wln-cZ-SaD"/>
+                            <constraint firstItem="PdL-Ep-Uff" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="fH3-7h-XPI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1X6-7C-a34" secondAttribute="trailing" constant="15" id="jqB-HS-oCX"/>
+                            <constraint firstItem="ODh-jI-SGc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oqu-mx-qKJ"/>
+                            <constraint firstItem="ODh-jI-SGc" firstAttribute="top" secondItem="KYz-yp-Fxc" secondAttribute="bottom" constant="70" id="qrr-ze-gfK"/>
+                            <constraint firstItem="UfC-Gb-nlI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="v5T-Cm-xcP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ActorNameLabel" destination="ODh-jI-SGc" id="aP2-I3-4hd"/>
+                        <outlet property="AwardsLabel" destination="1X6-7C-a34" id="SLe-nq-YoH"/>
+                        <outlet property="DirectorNameLabel" destination="Tcq-Rg-cM0" id="GjN-Qb-6Yp"/>
+                        <outlet property="IMDBIDLabel" destination="UfC-Gb-nlI" id="7q3-sA-9vv"/>
+                        <outlet property="LanguageLabel" destination="8rw-ni-CWF" id="eUo-1V-7kG"/>
+                        <outlet property="MovieNameLabel" destination="p59-Nw-FTP" id="LcJ-kO-hky"/>
+                        <outlet property="ReleaseDateLabel" destination="Gdd-hH-SbF" id="VLe-5i-koM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.725190839694655" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="popcorn.fill" catalog="system" width="102" height="128"/>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
